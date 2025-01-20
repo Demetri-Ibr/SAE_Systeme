@@ -1,0 +1,280 @@
+
+.txt-equipe667 {
+    text-align: justify;
+    margin: 5vw;
+}
+
+.scrollanimation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.scrollanimation div {
+    animation: appear ease-out;
+    height: max-content;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+table {
+    margin: 0 auto; 
+    border-collapse: collapse;
+    width: 90%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+
+th {
+    background-color: #ffde59; 
+    color: #333; 
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f8f9fa;
+color: #212529;
+}
+
+
+
+.parts {
+display: flex;
+justify-content: center;
+background-color: #dee2e6;
+padding: 15px 0;
+}
+
+.mainh1 {
+font-size: 2.5rem;
+margin-bottom: 25px;
+color: #333;
+text-align: center;
+font-weight: 600;
+}
+
+.main {
+padding: 30px;
+background-color: #fff;
+margin: 20px auto;
+width: 85%;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+
+
+
+footer {
+background-color: #1e000b;
+color: white;
+padding: 25px 0;
+text-align: center;
+}
+
+footer h1, footer h2 {
+margin: 10px 0;
+font-weight: 700;
+}
+
+footer div a {
+color: white;
+text-decoration: none;
+display: block;
+margin: 5px 0;
+transition: color 0.3s ease;
+}
+
+footer div a:hover {
+color: #ffde59;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+ul li {
+margin-bottom: 12px;
+font-size: 1.1rem;
+}
+
+section h2 {
+color: #495057;
+margin-top: 0;
+font-size: 1.75rem;
+font-weight: 600;
+border-bottom: 2px solid #dee2e6;
+padding-bottom: 10px;
+}
+
+section p, section ul {
+margin: 15px 0;
+line-height: 1.6;
+}
+
+a {
+color: #495057;
+text-decoration: none;
+font-weight: 500;
+}
+
+a:hover {
+text-decoration: underline;
+color: #354b86;
+}
+
+
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #ddd; 
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1; 
+}
+
+
+td.task {
+    background-color: #4CAF50; 
+    color: white; 
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) {
+    table {
+        width: 100%; 
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}     
+
+.scrollanimation2 div {
+    animation: appear ease-out;
+    height: max-content;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.scrollanimation div img {
+    height: 40vh;
+    width: auto;
+    object-fit: cover;
+}
+
+.scrollanimation div div {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.scrollanimation div div h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: fit-content;
+}
+
+.scrollanimation div div p {
+    margin: 30px;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+.scrollanimation div div a {
+    width: fit-content;
+    margin: 30px;
+    cursor: pointer;
+    border-bottom: 3px solid;
+    border-color: #ffde59;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.3;
+        transform: translateY(150px);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media screen and (min-width: 50px) and (max-width: 800px) {
+
+    .resultat-div div {
+        padding: 20px;
+    }
+
+    .resultat-div {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .actumain p {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+
+    .ouverture-div {
+        position: relative;
+        top: 50px !important;
+        padding: 25px !important;
+        margin: 25px !important;
+    }
+
+    .ouverturemain div {
+        margin: 10px !important;
+        padding: 10px !important;
+    }
+
+    .ouverturemain p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    footer {
+        margin-top: none !important;
+    }
+
+    /* scroll animation */
+    .scrollanimation {
+        flex-direction: column !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .scrollanimation div {
+        width: auto;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,192 @@
+/* Toutes les scollanimation sont "les bloques" avec les images dedans (images ou table) avec du texte en dessous et une balise a */
+
+
+.txt-equipe667 {
+    text-align: justify;
+    margin: 5vw;
+}
+
+.scrollanimation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.scrollanimation div {
+    animation: appear ease-out;
+    height: max-content;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.scrollanimation2 div {
+    animation: appear ease-out;
+    height: max-content;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.scrollanimation div img {
+    height: 40vh;
+    width: auto;
+    object-fit: cover;
+}
+
+.scrollanimation div div {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.scrollanimation div div h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: fit-content;
+}
+
+.scrollanimation div div p {
+    margin: 30px;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+.scrollanimation div div a {
+    width: fit-content;
+    margin: 30px;
+    cursor: pointer;
+    border-bottom: 3px solid;
+    border-color: #ffde59;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.3;
+        transform: translateY(150px);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media screen and (min-width: 50px) and (max-width: 800px) {
+
+    .resultat-div div {
+        padding: 20px;
+    }
+
+    .resultat-div {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .actumain p {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+
+    .ouverture-div {
+        position: relative;
+        top: 50px !important;
+        padding: 25px !important;
+        margin: 25px !important;
+    }
+
+    .ouverturemain div {
+        margin: 10px !important;
+        padding: 10px !important;
+    }
+
+    .ouverturemain p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    footer {
+        margin-top: none !important;
+    }
+
+    /* scroll animation */
+    .scrollanimation {
+        flex-direction: column !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .scrollanimation div {
+        width: auto;
+        margin-top: 20px;
+    }
+}
+table {
+    margin: 0 auto; /* Centre la table horizontalement */
+    border-collapse: collapse;
+    width: 90%; /* Ajustez la largeur selon vos besoins */
+    background-color: #fff; /* Fond blanc pour une meilleure lisibilité */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre élégant */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Pour éviter que les bordures dépassent */
+}
+
+/* En-tête de la table */
+th {
+    background-color: #ffde59; /* Couleur de fond pour l'en-tête */
+    color: #333; /* Texte sombre pour le contraste */
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Cellules de la table */
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #ddd; /* Bordures légères */
+}
+
+/* Lignes alternées */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Lignes claires */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1; 
+}
+
+
+td.task {
+    background-color: #4CAF50; 
+    color: white; 
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) {
+    table {
+        width: 100%; 
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+h1{
+    text-align: center; 
+    font-size: 2rem; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    color: #333;}
